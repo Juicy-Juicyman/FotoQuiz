@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Classmates Quiz</title>
+</head>
+<body>
+  <div class="container">
+    <div class="quiz-container hide">
+      <img id="quiz-image" class="hide" src="." alt="Classmates Images">
+      <div class="options-container">
+        <button class="option blue" data-option="Option 1">Option 1</button>
+        <button class="option red" data-option="Option 2">Option 2</button>
+        <button class="option orange" data-option="Option 3">Option 3</button>
+        <button class="option green" data-option="Option 4">Option 4</button>
+      </div>
+    </div>
+    <div class="game-controls">
+      <div class="game-modes">
+        <button class="game-mode" data-rounds="10">10 Rounds</button>
+        <button class="game-mode" data-rounds="20">20 Rounds</button>
+        <button class="game-mode" data-rounds="all">Play All Rounds</button>
+      </div>
+      <div id="score-container">
+        <p id="score">Score: 0/0</p>
+      </div>
+    </div>
+  </div>
+  <div id="scoreModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="scoreMessage"></p>
+    </div>
+  </div>
+
+  <script src="students.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
